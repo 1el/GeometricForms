@@ -1,0 +1,36 @@
+package GeometrischeFormen;
+public class Quader extends Rechteck {
+    
+    static int counter = 0;
+    private double hoehe;
+    private double oberflaeche;
+    private double volumen;
+    
+// ----------- Constructors ----------- 
+    
+    public Quader() {
+        this.counter++;
+        super.counter--;
+    }
+    
+    public Quader(double laenge, double breite, double hoehe) {
+        super(laenge, breite);
+        if (Check.notMinus(laenge, breite, hoehe)) {
+            this.hoehe = hoehe;
+            this.counter++;
+            super.counter--;
+        }
+    }
+    
+// ----------- Berechnungen ----------- 
+    
+    public double zeigeOberflaeche() {
+        oberflaeche = (zeigeFlaeche() + hoehe * breite + hoehe * laenge) * 2;
+        return oberflaeche;
+    }
+    
+    public double zeigeVolumen() {
+        volumen = laenge * breite * hoehe;
+        return volumen;
+    }
+}
