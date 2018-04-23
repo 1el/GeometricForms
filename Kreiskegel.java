@@ -3,8 +3,6 @@ public class Kreiskegel extends Kreis {
     
     static int counter = 0;
     public double hoehe;
-    private double oberflaeche;
-    private double volumen;
     
 // ----------- Constructors ----------- 
     
@@ -25,13 +23,11 @@ public class Kreiskegel extends Kreis {
 // ----------- Berechnungen ----------- 
 
     public double zeigeVolumen() {
-        volumen = (zeigeFlaeche() * hoehe) / 3;
-        return volumen;
+        return (zeigeFlaeche() * hoehe) / 3;
     }
 
     public double zeigeOberflaeche() {
-        oberflaeche = halbachse1 * Math.PI *
+        return halbachse1 * Math.PI *
                 (halbachse1 + Math.sqrt(hoehe * hoehe + halbachse1 * halbachse1));
-        return oberflaeche;
     }
 }
