@@ -4,7 +4,6 @@ public class Rechteck extends Formen {
     static int counter = 0;
     protected double laenge;
     protected double breite;
-    protected double flaeche;
     
     // ----------- Constructors ----------- 
     
