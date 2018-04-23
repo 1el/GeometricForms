@@ -3,8 +3,6 @@ public class Quader extends Rechteck {
     
     static int counter = 0;
     private double hoehe;
-    private double oberflaeche;
-    private double volumen;
     
 // ----------- Constructors ----------- 
     
@@ -25,12 +23,10 @@ public class Quader extends Rechteck {
 // ----------- Berechnungen ----------- 
     
     public double zeigeOberflaeche() {
-        oberflaeche = (zeigeFlaeche() + hoehe * breite + hoehe * laenge) * 2;
-        return oberflaeche;
+        return (zeigeFlaeche() + hoehe * breite + hoehe * laenge) * 2;
     }
     
     public double zeigeVolumen() {
-        volumen = laenge * breite * hoehe;
-        return volumen;
+        return laenge * breite * hoehe;
     }
 }
