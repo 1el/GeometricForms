@@ -4,8 +4,6 @@ public class Ellipse extends Formen {
     static int counter = 0;
     protected double halbachse1;
     protected double halbachse2;
-    private double flaeche;
-    private double umfang;
     
 // ---------------------- Constructors ----------------------
     
@@ -55,12 +53,10 @@ public class Ellipse extends Formen {
 // -------------------- Berechnungen --------------------------
     
     public double zeigeFlaeche() {
-        flaeche = java.lang.Math.PI * halbachse1 * halbachse2;
-        return flaeche;
+        return java.lang.Math.PI * halbachse1 * halbachse2;
     }
     
     public double zeigeUmfang() {
-        umfang = java.lang.Math.PI * (halbachse1 + halbachse2);
-        return umfang;
+        return java.lang.Math.PI * (halbachse1 + halbachse2);
     }
 }
