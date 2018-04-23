@@ -2,7 +2,6 @@ package GeometrischeFormen;
 public class Kugel extends TriaxialesEllipsoid {
     
     static int counter = 0;
-    private double oberflaeche;
     
 // ----------- Constructors ----------- 
 
@@ -22,7 +21,6 @@ public class Kugel extends TriaxialesEllipsoid {
 // ----------- Berechnungen ----------- 
     
     public double zeigeOberflaeche() {
-        oberflaeche = 4 * Math.PI * halbachse1 * halbachse1;
-        return oberflaeche;
+        return 4 * Math.PI * halbachse1 * halbachse1;
     }
 }
