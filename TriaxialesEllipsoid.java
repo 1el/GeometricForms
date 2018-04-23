@@ -3,7 +3,6 @@ public class TriaxialesEllipsoid extends Ellipse {
     
     static int counter = 0;
     protected double halbachse3;
-    private double volumen;
     
 // ----------- Constructors ----------- 
     
@@ -24,8 +23,6 @@ public class TriaxialesEllipsoid extends Ellipse {
 // ----------- Berechnungen ----------- 
     
     public double zeigeVolumen() {
-        volumen = (4 * Math.PI * halbachse1 * halbachse2 * halbachse3) / 3;
-        return volumen;
-        
+        return (4 * Math.PI * halbachse1 * halbachse2 * halbachse3) / 3;
     }
 }
