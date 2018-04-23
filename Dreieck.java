@@ -5,8 +5,6 @@ public class Dreieck extends Formen {
     private double seite1;
     private double seite2;
     private double seite3;
-    private double flaeche;
-    private double umfang;
 
 // -------------- Constructors ------------------- 
     
@@ -52,14 +50,12 @@ public class Dreieck extends Formen {
 // ----------- Berechnungen ------------------- 
 
     public double zeigeFlaeche() {
-        flaeche = (Math.sqrt((seite1 + seite2 + seite3)
+        return (Math.sqrt((seite1 + seite2 + seite3)
                 * (seite1 + seite2 - seite3) * (seite2 + seite3 - seite1)
                 * (seite3 + seite1 - seite2))) / 4;
-        return flaeche;
     }
 
     public double zeigeUmfang() {
-        umfang = seite1 + seite2 + seite3;
-        return umfang;
+        return seite1 + seite2 + seite3;
     }
 }
