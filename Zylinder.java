@@ -4,8 +4,6 @@ public class Zylinder extends Kreis {
     
     static int counter = 0;
     public double hoehe;
-    private double oberflaeche;
-    private double volumen;
 
 // ----------- Constructors ----------- 
     
@@ -26,12 +24,10 @@ public class Zylinder extends Kreis {
 // ----------- Berechnungen -----------
 
     public double zeigeVolumen() {
-        volumen = zeigeFlaeche() * hoehe;
-        return volumen;
+        return zeigeFlaeche() * hoehe;
     }
 
     public double zeigeOberflaeche() {
-        oberflaeche = 2 * zeigeFlaeche() + 2 * Math.PI * halbachse1 * hoehe;
-        return oberflaeche;
+        return 2 * zeigeFlaeche() + 2 * Math.PI * halbachse1 * hoehe;
     }
 }
