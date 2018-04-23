@@ -5,7 +5,6 @@ public class Rechteck extends Formen {
     protected double laenge;
     protected double breite;
     protected double flaeche;
-    private double umfang;
     
     // ----------- Constructors ----------- 
     
@@ -55,12 +54,10 @@ public class Rechteck extends Formen {
     // ----------- Berechnungen ----------- 
     
     public double zeigeFlaeche() {
-        flaeche = laenge * breite;
-        return flaeche;
+        return laenge * breite;
     }
     
     public double zeigeUmfang() {
-        umfang = 2 * (laenge + breite);
-        return umfang;
+        return 2 * (laenge + breite);
     }
 }
