@@ -2,7 +2,7 @@
 Exercise in Java. Define geometric forms and calculate circumference, surface, volume etc.
 
 
-<b>Hierarchie der Formen:<b/>
+Hierarchie der Formen:
         
 Formen</br>
 &nbsp;&nbsp;&nbsp;&nbsp;Dreieck</br>
